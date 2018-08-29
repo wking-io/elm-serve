@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-var program = require('commander');
-var path = require('path');
+var program = require('commander')
+var path = require('path')
 
 program
   .version(require('../package.json').version)
@@ -44,7 +44,7 @@ program
     'Turning on logging on the server and client side. Defaults to false',
     false
   )
-  .parse(process.argv);
+  .parse(process.argv)
 
-var elmServe = path.join(__dirname, '../lib/elm-serve.js');
-elmServe(program);
+var elmServe = path.join(__dirname, '../lib/elm-serve.js')
+elmServe(program)
