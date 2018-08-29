@@ -1,0 +1,44 @@
+{
+  "name": "elm-dev-server",
+  "version": "0.1.0",
+  "description": "Node.js module to refresh and reload your Elm Application in your browser when your code changes.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:wking-io/elm-dev-server.git"
+  },
+  "keywords": [
+    "reload",
+    "refresh",
+    "http",
+    "development",
+    "elm"
+  ],
+  "author": "William King <contact@wking.io>",
+  "contributors": [
+    "William King <contact@wking.io>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "cli-color": "1.2.0",
+    "commander": "2.9.0",
+    "connect-pushstate": "1.1.0",
+    "finalhandler": "1.1.1",
+    "minimist": "1.2.0",
+    "opn": "5.3.0",
+    "serve-static": "1.13.2",
+    "supervisor": "0.12.0",
+    "url-parse": "1.4.3",
+    "ws": "5.2.0"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "test": "npm run standard",
+    "standard": "standard **/*.js bin/**/*"
+  },
+  "bin": {
+    "elm-serve": "./bin/elm-serve"
+  }
+}
