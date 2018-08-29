@@ -1,6 +1,6 @@
 {
   "name": "elm-serve",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Node.js module to refresh and reload your Elm Application in your browser when your code changes.",
   "repository": {
     "type": "git",
