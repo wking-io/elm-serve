@@ -31,6 +31,7 @@
     "ws": "5.2.0"
   },
   "devDependencies": {
+    "husky": "0.14.3",
     "standard": "^11.0.1"
   },
   "main": "./index.js",
@@ -38,6 +39,11 @@
     "test": "npm run standard:fix && npm run standard",
     "standard": "standard **/*.js bin/**/*",
     "standard:fix": "standard --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run test"
+    }
   },
   "bin": {
     "elm-serve": "./bin/elm-serve.js"
