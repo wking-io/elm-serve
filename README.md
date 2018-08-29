@@ -1,7 +1,5 @@
 # elm-serve
 
-=======
-
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![NPM version](https://img.shields.io/npm/v/elm-serve.svg)](https://www.npmjs.com/package/elm-serve)
 
