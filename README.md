@@ -1,9 +1,9 @@
-# elm-dev-server
+# elm-serve
 
 =======
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
-[![NPM version](https://img.shields.io/npm/v/elm-dev-server.svg)](https://www.npmjs.com/package/elm-dev-server)
+[![NPM version](https://img.shields.io/npm/v/elm-serve.svg)](https://www.npmjs.com/package/elm-serve)
 
 Automatically refresh and reload your Elm application in your browser after compile.
 
@@ -18,17 +18,17 @@ This server works by monitoring changes to the static files that the Elm compile
 ## Installation
 
 ```sh
-npm install [-g] [--save-dev] elm-dev-server
+npm install [-g] [--save-dev] elm-serve
 ```
 
-## Two ways to use `elm-dev-server`
+## Two ways to use `elm-serve`
 
-There are two different ways to use `elm-dev-server`.
+There are two different ways to use `elm-serve`.
 
 1. As a function call
 2. As a command line application
 
-## Using `elm-dev-server` as function call
+## Using `elm-serve` as function call
 
 When this is used as a function call Reload can be used in conjunction with tools that allow for automatically restarting the server such as [supervisor](https://github.com/isaacs/node-supervisor) (recommended), [nodemon](https://github.com/remy/nodemon), [forever](https://github.com/nodejitsu/forever), etc.
 

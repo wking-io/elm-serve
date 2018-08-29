@@ -1,10 +1,10 @@
 {
-  "name": "elm-dev-server",
+  "name": "elm-serve",
   "version": "0.1.0",
   "description": "Node.js module to refresh and reload your Elm Application in your browser when your code changes.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:wking-io/elm-dev-server.git"
+    "url": "git@github.com:wking-io/elm-serve.git"
   },
   "keywords": [
     "reload",
@@ -39,6 +39,6 @@
     "standard": "standard **/*.js bin/**/*"
   },
   "bin": {
-    "elm-serve": "./bin/elm-serve"
+    "elm-serve": "./bin/elm-serve.js"
   }
 }
