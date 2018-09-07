@@ -48,7 +48,12 @@ elmServe(opts);
 | startPage      | string  | Specify a start page.                                            | ✓        | `index.html`    |
 | open           | boolean | Open in the browser automatically.                               | ✓        | `index.html`    |
 | pushstate      | boolean | Automatically serve the root or `index.html` for SPAs.           | ✓        | `index.html`    |
+| proxyPrefix    | string  | Proxy some requests to another server. (see below)               | ✓        |                 |
+| proxyHost      | string  | Proxy some requests to another server. (see below)               | ✓        |                 |
 | verbose        | boolean | If set to true, will show logging on the server and client side. | ✓        | `false`         |
+
+
+If either `proxyPrefix` or `proxyHost` is given, the other must be as well. If enabled, requests to paths starting with `proxyPrefix` will be proxied to another server running at `proxyHost`. This can be very useful if developing against an API backend running locally on a different port. Example: `{ proxyPrefi: '/api', proxyHost: 'http://localhost:9000' }`.
 
 ### Usage for Command Line Application
 
@@ -65,6 +70,8 @@ Options:
   -w, --watch-dir [watch-dir]    The directory to watch. Defaults the serving directory.
   -e, --exts [extensions]        Extensions separated by commas or pipes. Defaults to html,js,css.
   -p, --port [port]              The port to bind to. Can be set with PORT env variable as well. Defaults to 8080
+  --proxyPrefix [prefix]         Proxy requests to paths starting with `prefix` to another server. Requires `--proxyHost` and should be a string like `/api`. Defaults to not proxying
+  --proxyHost [host]             Proxy requests to another server running at `host`. Requires `--proxyHost` and should be a full URL, eg. `http://localhost:9000`. Defaults to not proxying
   -s, --start-page [start-page]  Specify a start page. Defaults to index.html
   -u, --pushstate [pushstate]    Automatically serve the root or `index.html` for SPAs. Defaults to false.
   -v, --verbose [verbose]        Turning on logging on the server and client side. Defaults to false
