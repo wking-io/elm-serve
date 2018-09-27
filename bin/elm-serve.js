@@ -37,7 +37,8 @@ program
   )
   .option(
     '-u, --pushstate [pushstate]',
-    'Automatically serve the root or `index.html` for SPAs. Defaults to false.'
+    'Automatically serve the root or `index.html` for SPAs. Defaults to false.',
+    false
   )
   .option(
     '-v, --verbose [verbose]',
