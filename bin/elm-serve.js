@@ -31,11 +31,11 @@ program
     '8080'
   )
   .option(
-    '--proxyPrefix [prefix]',
+    '-x, --proxyPrefix [prefix]',
     'Proxy requests to paths starting with `prefix` to another server. Requires `--proxyHost` and should be a string like `/api`. Defaults to not proxying'
   )
   .option(
-    '--proxyHost [host]',
+    '-y, --proxyHost [proxyhost]',
     'Proxy requests to another server running at `host`. Requires `--proxyHost` and should be a full URL, eg. `http://localhost:9000`. Defaults to not proxying'
   )
   .option(
@@ -54,13 +54,6 @@ program
     false
   )
   .parse(process.argv)
-
-if (
-  (program.proxyPrefix && program.proxyHost === undefined) ||
-  (program.proxyHost && program.proxyPrefix === undefined)) {
-  console.log('If either `--proxyPrefix` and `--proxyHost` is given, the other must be as well')
-  return
-}
 
 var elmServe = require(path.join(__dirname, '../lib/elm-serve.js'))
 elmServe(program)

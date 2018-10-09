@@ -71,7 +71,7 @@ Options:
   -e, --exts [extensions]        Extensions separated by commas or pipes. Defaults to html,js,css.
   -p, --port [port]              The port to bind to. Can be set with PORT env variable as well. Defaults to 8080
   --proxyPrefix [prefix]         Proxy requests to paths starting with `prefix` to another server. Requires `--proxyHost` and should be a string like `/api`. Defaults to not proxying
-  --proxyHost [host]             Proxy requests to another server running at `host`. Requires `--proxyHost` and should be a full URL, eg. `http://localhost:9000`. Defaults to not proxying
+  --proxyHost [proxyhost]             Proxy requests to another server running at `host`. Requires `--proxyHost` and should be a full URL, eg. `http://localhost:9000`. Defaults to not proxying
   -s, --start-page [start-page]  Specify a start page. Defaults to index.html
   -u, --pushstate [pushstate]    Automatically serve the root or `index.html` for SPAs. Defaults to false.
   -v, --verbose [verbose]        Turning on logging on the server and client side. Defaults to false
