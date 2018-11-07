@@ -27,8 +27,8 @@ program
   )
   .option(
     '-p, --port [port]',
-    'The port to bind to. Can be set with PORT env variable as well. Defaults to 8080',
-    '8080'
+    'The port to bind to. Can be set with PORT env variable as well. Defaults to 1234',
+    '1234'
   )
   .option(
     '-x, --proxyPrefix [prefix]',

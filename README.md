@@ -69,7 +69,7 @@ Options:
   -d, --dir [dir]                The directory to serve up. Defaults to current dir.
   -w, --watch-dir [watch-dir]    The directory to watch. Defaults the serving directory.
   -e, --exts [extensions]        Extensions separated by commas or pipes. Defaults to html,js,css.
-  -p, --port [port]              The port to bind to. Can be set with PORT env variable as well. Defaults to 8080
+  -p, --port [port]              The port to bind to. Can be set with PORT env variable as well. Defaults to 1234
   --proxyPrefix [prefix]         Proxy requests to paths starting with `prefix` to another server. Requires `--proxyHost` and should be a string like `/api`. Defaults to not proxying
   --proxyHost [proxyhost]             Proxy requests to another server running at `host`. Requires `--proxyHost` and should be a full URL, eg. `http://localhost:9000`. Defaults to not proxying
   -s, --start-page [start-page]  Specify a start page. Defaults to index.html
