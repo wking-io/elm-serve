@@ -66,6 +66,7 @@ Options:
   -V, --version                  output the version number
   -o, --open                     Open in the browser automatically.
   -n, --host [host]              If -b flag is being used, this allows for custom host. Defaults to localhost.
+  -S, --ssl                      Start https server instead of http. Defaults to false.
   -d, --dir [dir]                The directory to serve up. Defaults to current dir.
   -w, --watch-dir [watch-dir]    The directory to watch. Defaults the serving directory.
   -e, --exts [extensions]        Extensions separated by commas or pipes. Defaults to html,js,css.
