@@ -49,6 +49,11 @@ program
     false
   )
   .option(
+    '-S, --ssl [ssl]',
+    'Start https server instead of http. Defaults to false.',
+    false
+  )
+  .option(
     '-v, --verbose [verbose]',
     'Turning on logging on the server and client side. Defaults to false',
     false
