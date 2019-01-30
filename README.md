@@ -66,7 +66,6 @@ Options:
   -V, --version                  output the version number
   -o, --open                     Open in the browser automatically.
   -n, --host [host]              If -b flag is being used, this allows for custom host. Defaults to localhost.
-  -S, --ssl                      Start https server instead of http. Defaults to false.
   -d, --dir [dir]                The directory to serve up. Defaults to current dir.
   -w, --watch-dir [watch-dir]    The directory to watch. Defaults the serving directory.
   -e, --exts [extensions]        Extensions separated by commas or pipes. Defaults to html,js,css.
@@ -75,8 +74,13 @@ Options:
   --proxyHost [proxyhost]             Proxy requests to another server running at `host`. Requires `--proxyHost` and should be a full URL, eg. `http://localhost:9000`. Defaults to not proxying
   -s, --start-page [start-page]  Specify a start page. Defaults to index.html
   -u, --pushstate [pushstate]    Automatically serve the root or `index.html` for SPAs. Defaults to false.
+  -S, --ssl                      Start https server instead of http. Defaults to false.
+  -c, --cert [cert]              Location of an external certificate file. Requires `--ssl` and `--key`. Defaults to a self signed certificate.
+  -k, --key [key]                Location of an external certificate key file. Requires `--ssl` and `--cert`. Defaults to a self signed key.
   -v, --verbose [verbose]        Turning on logging on the server and client side. Defaults to false
 ```
+
+Any external certificate/key pair may be used. For local development, a good option for valid, self signed certificates is [mkcert](https://github.com/FiloSottile/mkcert).
 
 ## License
 
