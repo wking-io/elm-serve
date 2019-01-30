@@ -15,7 +15,8 @@
   ],
   "author": "William King <contact@wking.io>",
   "contributors": [
-    "William King <contact@wking.io>"
+    "William King <contact@wking.io>",
+    "Tim DuBois <tim@neophilus.net>"
   ],
   "license": "MIT",
   "dependencies": {

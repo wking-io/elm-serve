@@ -54,6 +54,14 @@ program
     false
   )
   .option(
+    '-c, --cert [cert]',
+    'Location of an external certificate file. Requires `--ssl` and `--key`. Defaults to a self signed certificate.'
+  )
+  .option(
+    '-k, --key [key]',
+    'Location of an external certificate key file. Requires `--ssl` and `--cert`. Defaults to a self signed key.'
+  )
+  .option(
     '-v, --verbose [verbose]',
     'Turning on logging on the server and client side. Defaults to false',
     false
